@@ -24,20 +24,24 @@ Seconda parte dell'esercizio
 
 */
 
-let kilometriUser = prompt("Inserisci il numero di km che dovrai percorrere");
+let nomeUtente = prompt(" Inserisci qui il tuo nome ")
+
+let lastName = prompt(" Inserisci qui il tuo cognome ")
+
+let kilometriUser = prompt(" Inserisci il numero di km che dovrai percorrere ");
 console.log(kilometriUser);
 
 
-let etàUser = prompt("Inserisci la tua età");
+let etàUser = prompt(" Inserisci la tua età ");
 console.log(etàUser);
 
-let prezzoBiglietto = parseFloat(kilometriUser) * 0.21;
+let prezzoBiglietto = parseFloat( kilometriUser ) * 0.21;
 
-if (etàUser < 18) {
+if ( etàUser < 18 ) {
     prezzoBiglietto = prezzoBiglietto * 0.8;
 }
-else if (etàUser > 65) {
+else if ( etàUser > 65 ) {
     prezzoBiglietto = prezzoBiglietto * 0.6;
 }
 
-document.writeln("Il prezzo del biglietto è: " + prezzoBiglietto.toFixed(2));
+document.writeln( " Sig. " + nomeUtente + lastName + " Il prezzo del biglietto è di: € " + prezzoBiglietto.toFixed(2));
